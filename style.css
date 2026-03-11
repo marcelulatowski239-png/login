@@ -1,0 +1,92 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") no-repeat center;
+background-size:cover;
+}
+
+.login-box{
+width:350px;
+padding:40px;
+background:rgba(0,0,0,0.6);
+border-radius:10px;
+backdrop-filter: blur(10px);
+color:white;
+}
+
+.login-box h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.input-box{
+position:relative;
+margin-bottom:25px;
+}
+
+.input-box input{
+width:100%;
+padding:10px;
+border:none;
+border-bottom:2px solid white;
+background:transparent;
+outline:none;
+color:white;
+}
+
+.input-box label{
+position:absolute;
+top:50%;
+left:0;
+transform:translateY(-50%);
+pointer-events:none;
+transition:0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label{
+top:-10px;
+font-size:12px;
+}
+
+.options{
+display:flex;
+justify-content:space-between;
+font-size:14px;
+margin-bottom:20px;
+}
+
+button{
+width:100%;
+padding:10px;
+border:none;
+border-radius:20px;
+background:white;
+color:black;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#ddd;
+}
+
+.register{
+text-align:center;
+margin-top:15px;
+font-size:14px;
+}
+
+.register a{
+color:white;
+font-weight:bold;
+}
